@@ -50,7 +50,7 @@ public class MaquinaExpendedoraSimple {
      * Simula la introduccion de dinero por parte del cliente actual
      */
     public void introducirDinero(int cantidadIntroducida) {
-        balanceClienteActual = balanceClienteActual + cantidadIntroducida;
+        totalDineroAcumulado += balanceClienteActual + cantidadIntroducida;
     }
 
     /**
@@ -69,7 +69,7 @@ public class MaquinaExpendedoraSimple {
     }
 
     public int getTotalDineroAcumulado(){
-        return totalDineroAcumulado = totalDineroAcumulado + balanceClienteActual;
+        return totalDineroAcumulado;
     }
     
     public void setPrecioBillete(int nuevoPrecioBillete){
