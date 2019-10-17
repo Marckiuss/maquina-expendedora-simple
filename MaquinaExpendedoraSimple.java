@@ -1,5 +1,5 @@
 public class MaquinaExpendedoraSimple {
-    
+
     // El precio del billete
     private int precioBillete;
     // La cantidad de dinero que lleva metida el cliente actual
@@ -23,7 +23,7 @@ public class MaquinaExpendedoraSimple {
         estacionOrigen = "León";
         estacionDestino = "Madrid";
     }
-    
+
     public MaquinaExpendedoraSimple(int precioDelBillete, String destino) {
         precioBillete = precioDelBillete;
         balanceClienteActual = 0;
@@ -64,10 +64,11 @@ public class MaquinaExpendedoraSimple {
         System.out.println("# " + precioBillete + " euros.");
         System.out.println("##################");
         System.out.println();
-
-        // Actualiza el total de dinero acumulado en la maquina
-        totalDineroAcumulado = totalDineroAcumulado + balanceClienteActual;
         // Queda preparada para el proximo cliente
         balanceClienteActual = 0;
+    }
+
+    public int getTotalDineroAcumulado(){
+        return totalDineroAcumulado = totalDineroAcumulado + balanceClienteActual;
     }
 }
